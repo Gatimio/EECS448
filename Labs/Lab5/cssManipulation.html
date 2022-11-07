@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title> CSS Manipulation </title>
+        <header>
+            <ul>
+                <li><a href="/index.html">Homepage</a></li>
+                <li><a href="/profile.html">Profile</a></li>
+                <li><a href="/passwordVal.html">Password Validator</a></li>
+                <li><a href="/slideShow.html">Slide Show</a></li>
+                <li><a href="/cssManipulation.html">CSS Manipulation </a></li>
+             </ul>
+        </header>
+    </head>
+
+   <body>
+    <h1 class="text-center bg-dark text-white"> CSS Manipulation </h1>
+        <div id="bordColor">
+           
+            <div id="backColor"> 
+                <h4 id="textColH">Keep Going</h4><br><br>
+                <p id="textCol">
+                    When things go wrong, as they sometimes will,
+                    When the road you're trudging seems all up hill,
+                    When the funds are low and the debts are high,
+                    And you want to smile, but you have to sigh,
+                    When care is pressing you down a bit,
+                    Rest if you must—but don't you quit.<br><br>
+                    
+                    Life is queer with its twists and turns,
+                    As every one of us sometimes learns,
+                    And many a failure turns about
+                    When he might have won had he stuck it out;
+                    Don't give up, though the pace seems slow—
+                    You may succeed with another blow.
+                    <br><br>
+                    
+                    Often the goal is nearer than
+                    It seems to a faint and faltering man,
+                    Often the struggler has given up
+                    When he might have captured the victor's cup,
+                    And he learned too late, when the night slipped down,
+                    How close he was to the golden crown.<br><br>
+                    
+                    Success is failure turned inside out—
+                    The silver tint of the clouds of doubt,
+                    And you never can tell how close you are,
+                    It may be near when it seems afar;
+                    So stick to the fight when you're hardest hit—
+                    It's when things seem worst that you mustn't quit<br><br>
+
+                    - Edgar Guest 
+                </p>
+            </div>
+        </div>
+
+        <div class="grid-container">
+
+            <div class="grid-child purple">
+                <p id="intText">Change border color rgb():</p><br>
+                <label>Red value:</label><input type="number" min="0" max="250" id="bRed"><br>
+                <label>Green value:</label><input type="number" min="0" max="250" id="bGreen"><br>
+                <label>Blue value:</label><input type="number" min="0" max="250" id="bBlue"><br>
+                <label>Width:</label><input type="number" id="wid"><br>
+                <button class="button1" onclick="borderColor()" >Change border</button>
+            </div>
+        
+            <div class="grid-child green">
+                <p id="intText">Change background color rgb():</p><br>
+                <label>Red value:</label><input id="bgRed" type="number" min="0" max="250"><br>
+                <label>Green value:</label><input id="bgGreen" type="number" min="0" max="250"><br>
+                <label>Blue value:</label><input id="bgBlue" type="number" min="0" max="250"><br>
+                <button class="button2" onclick="backColor()">Change background</button>
+            </div>
+          
+        </div>
+   </body>
+   <style>
+       label{
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.15em;
+            
+            display: inline-block;
+            padding: 10px 10px 10px 150px;
+            position: relative;
+        }
+   </style>
+   <script>
+        function borderColor() {
+            var red = document.getElementById("bRed").value
+            var green = document.getElementById("bGreen").value
+            var blue = document.getElementById("bBlue").value
+            document.getElementById("backColor").style.borderColor = `rgb(${parseInt(red)},${parseInt(green)},${parseInt(blue)})`;
+            //rgb(30,144,255)
+        }
+        function backColor() {
+            var bgRed = document.getElementById("bgRed").value
+            var bgGreen = document.getElementById("bgGreen").value
+            var bgBlue = document.getElementById("bgBlue").value
+            document.getElementById("backColor").style.backgroundColor = `rgb(${parseInt(bgRed)},${parseInt(bgGreen)},${parseInt(bgBlue)})`;
+            document.getElementById("textColH").style.color = `rgb(0,0,0)`;
+            document.getElementById("textCol").style.color = `rgb(0,0,0)`
+        }   
+
+   </script>
+</html>
