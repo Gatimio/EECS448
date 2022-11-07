@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title> Profile </title>
+        <header>
+            <ul>
+                <li><a href="/index.html">Homepage</a></li>
+                <li><a href="/profile.html">Profile</a></li>
+                <li><a href="/passwordVal.html">Password Validator</a></li>
+                <li><a href="/slideShow.html">Slide Show</a></li>
+                <li><a href="/cssManipulation.html">CSS Manipulation </a></li>
+             </ul>
+        </header>
+    </head>
+    <body>
+        <h1 class="text-center bg-dark text-white"> Profile Card</h1>
+        <figure class="snip1336">
+            <img src="/pictures/img7.jpeg" alt="sample87" />
+            <figcaption>
+              <img src="/pictures/img6.jpg" alt="profile-sample4" class="profile" />
+              <h2>Collins Gatimi<span>Computer Science Student</span></h2>
+              <p>Proficient in HTML, CSS, JavaScript, Python, and Java<br><br>
+                Attending: University Of Kansas<br><br>
+                I have just over a year of experience as a junior software engineer with First Technology.
+                 In my short time there, I've already contributed to over a dozen projects and assisted 
+                 with managing one project for one of the firm's long-time clients (example text)
+              </p>
+              <a href="https://github.com/Gatimio" class="follow">Github</a>
+              <a href="#" class="info">linkdin</a>
+            </figcaption>
+          </figure>
+    </body>
+    <style>
+       .snip1336 {
+        font-family: 'Roboto', Arial, sans-serif;
+        position: center;
+        overflow: hidden;
+        margin: 10px;
+        min-width: 230px;
+        max-width: 315px;
+        width: 100%;
+        color: #ffffff;
+        text-align: inherit;
+        line-height: 1.4em;
+        background-color: #141414;
+        margin: auto;
+        }
+        .snip1336 * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+        }
+        .snip1336 img {
+        max-width: 100%;
+        vertical-align: top;
+        opacity: 0.85;
+        }
+        .snip1336 figcaption {
+        width: 100%;
+        background-color: #141414;
+        padding: 25px;
+        position: relative;
+        }
+        .snip1336 figcaption:before {
+        position: absolute;
+        content: '';
+        bottom: 100%;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 55px 0 0 400px;
+        border-color: transparent transparent transparent #141414;
+        }
+        .snip1336 figcaption a {
+        padding: 5px;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        margin: 10px 0;
+        display: inline-block;
+        opacity: 0.65;
+        width: 47%;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        }
+        .snip1336 figcaption a:hover {
+        opacity: 1;
+        }
+        .snip1336 .profile {
+        border-radius: 50%;
+        position: absolute;
+        bottom: 100%;
+        left: 25px;
+        z-index: 1;
+        max-width: 90px;
+        opacity: 1;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        .snip1336 .follow {
+        margin-right: 4%;
+        border-color: #2980b9;
+        color: #2980b9;
+        }
+        .snip1336 h2 {
+        margin: 0 0 5px;
+        font-weight: 300;
+        }
+        .snip1336 h2 span {
+        display: block;
+        font-size: 0.5em;
+        color: #2980b9;
+        }
+        .snip1336 p {
+        margin: 0 0 10px;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        opacity: 0.8;
+        }
+    </style>
+</html>
